@@ -1,0 +1,75 @@
+MASTER SERVICE AGREEMENT
+
+This Master Service Agreement ("Agreement") is entered into as of January 15, 2024, by and between
+Acme Corporation, a Delaware corporation ("Client"), and DataTech Solutions, Inc., a California
+corporation ("Provider").
+
+1. SERVICES
+
+Provider agrees to provide data migration and analytics consulting services as specified in the
+Statement of Work attached as Exhibit A ("Services").
+
+2. TERM
+
+This Agreement shall commence on January 15, 2024 and continue for one (1) year unless earlier
+terminated by either party in accordance with Section 10 of this Agreement.
+
+3. FEES AND PAYMENT
+
+Client shall pay Provider the fees as outlined in Exhibit A. Invoices shall be submitted monthly
+and payment shall be due within thirty (30) days of invoice date.
+
+4. CONFIDENTIALITY
+
+Each party agrees to maintain the confidentiality of all proprietary information disclosed by the
+other party, including but not limited to technical data, business plans, and customer lists.
+
+5. INTELLECTUAL PROPERTY RIGHTS
+
+All work product, including source code, documentation, and analysis reports, shall be the exclusive
+property of Client upon full payment of all fees.
+
+6. WARRANTIES
+
+Provider warrants that it has the right to enter into this Agreement and that the Services will be
+performed in a professional and workmanlike manner consistent with industry standards.
+
+7. LIMITATION OF LIABILITY
+
+Neither party shall be liable for indirect, incidental, consequential, or punitive damages arising
+out of or related to this Agreement or the Services.
+
+8. INSURANCE
+
+Provider shall maintain professional liability insurance with minimum coverage of $1,000,000 per
+occurrence and $2,000,000 aggregate throughout the term of this Agreement.
+
+9. COMPLIANCE
+
+Provider shall comply with all applicable laws and regulations in performing the Services, including
+data protection and privacy laws such as GDPR, CCPA, and HIPAA where applicable.
+
+10. TERMINATION
+
+Either party may terminate this Agreement with thirty (30) days written notice if the other party
+materially breaches this Agreement and fails to cure such breach within fifteen (15) days of
+receiving written notice of the breach.
+
+11. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws of the State of
+California, without regard to its conflict of laws principles.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above.
+
+CLIENT:                                    PROVIDER:
+
+Acme Corporation                           DataTech Solutions, Inc.
+
+By: ______________________                 By: ______________________
+
+Name: John Smith                           Name: Sarah Johnson
+
+Title: VP, IT Operations                   Title: Executive Director
+
+Date: ______________________               Date: ______________________

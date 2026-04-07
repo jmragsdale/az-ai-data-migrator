@@ -1,0 +1,157 @@
+[
+  {
+    "_id": "ORDER001",
+    "customerId": "CUST001",
+    "orderDate": "2024-01-15T10:30:00Z",
+    "items": [
+      {
+        "sku": "SKU001",
+        "quantity": 2,
+        "unitPrice": 29.99,
+        "subtotal": 59.98
+      },
+      {
+        "sku": "SKU002",
+        "quantity": 1,
+        "unitPrice": 49.99,
+        "subtotal": 49.99
+      }
+    ],
+    "shippingAddress": {
+      "street": "123 Main Street",
+      "city": "New York",
+      "state": "NY",
+      "zipCode": "10001",
+      "country": "USA"
+    },
+    "total": 109.97,
+    "status": "completed",
+    "paymentMethod": "credit_card",
+    "lastUpdated": "2024-01-20T14:22:00Z"
+  },
+  {
+    "_id": "ORDER002",
+    "customerId": "CUST002",
+    "orderDate": "2024-01-16T14:15:00Z",
+    "items": [
+      {
+        "sku": "SKU003",
+        "quantity": 3
+      }
+    ],
+    "total": 89.97,
+    "status": "pending"
+  },
+  {
+    "_id": "ORDER003",
+    "customerId": "CUST001",
+    "orderDate": "2024-01-17T09:45:00Z",
+    "shippingAddress": {
+      "street": "456 Oak Avenue",
+      "apartment": "Suite 200",
+      "city": "Boston",
+      "state": "MA",
+      "zipCode": "02101"
+    },
+    "items": [
+      {
+        "sku": "SKU004",
+        "quantity": 1,
+        "unitPrice": 199.99
+      }
+    ],
+    "total": 199.99,
+    "status": "shipped",
+    "trackingNumber": "TRK123456789",
+    "paymentMethod": "paypal"
+  },
+  {
+    "_id": "ORDER004",
+    "customerId": "CUST003",
+    "orderDate": "2024-01-18T11:20:00Z",
+    "items": [],
+    "status": "cancelled",
+    "cancellationReason": "Customer request"
+  },
+  {
+    "_id": "ORDER005",
+    "customerId": "CUST002",
+    "orderDate": "2024-01-19T16:30:00Z",
+    "items": [
+      {
+        "sku": "SKU005",
+        "quantity": 2,
+        "unitPrice": 15.99
+      },
+      {
+        "sku": "SKU006",
+        "quantity": 1,
+        "unitPrice": 24.99
+      }
+    ],
+    "total": 56.97,
+    "status": "processing",
+    "notes": "Express shipping requested"
+  },
+  {
+    "_id": "ORDER006",
+    "customerId": "CUST004",
+    "orderDate": "2024-01-20T13:00:00Z",
+    "shippingAddress": {
+      "street": "789 Pine Road",
+      "city": "San Francisco",
+      "state": "CA",
+      "zipCode": "94105"
+    },
+    "items": [
+      {
+        "sku": "SKU007",
+        "quantity": 5,
+        "unitPrice": 9.99
+      }
+    ],
+    "total": 49.95,
+    "status": "completed",
+    "paymentMethod": "debit_card",
+    "loyaltyPoints": 250
+  },
+  {
+    "_id": "ORDER007",
+    "customerId": "CUST005",
+    "orderDate": "2024-01-21T10:15:00Z",
+    "items": [
+      {
+        "sku": "SKU008",
+        "quantity": 1
+      },
+      {
+        "sku": "SKU009",
+        "quantity": 2
+      }
+    ],
+    "total": 79.97,
+    "status": "completed"
+  },
+  {
+    "_id": "ORDER008",
+    "customerId": "CUST003",
+    "orderDate": "2024-01-22T15:45:00Z",
+    "items": [
+      {
+        "sku": "SKU010",
+        "quantity": 1,
+        "unitPrice": 299.99,
+        "discount": 0.15
+      }
+    ],
+    "shippingAddress": {
+      "poBox": "12345",
+      "city": "Seattle",
+      "state": "WA",
+      "zipCode": "98101"
+    },
+    "total": 254.99,
+    "status": "shipped",
+    "estimatedDelivery": "2024-01-25T00:00:00Z"
+  }
+]
