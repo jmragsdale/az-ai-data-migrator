@@ -1,4 +1,53 @@
-# Azure AI Data Migrator
+<a id="azure-ai-data-migrator"></a>
+
+<a href="#setup-guide">
+<picture>
+  <source media="(max-width: 600px)" srcset="docs/assets/readme/header-mobile.png">
+  <img src="docs/assets/readme/header.png" width="1440" alt="Azure AI Data Migrator. A Python CLI reference for AI-assisted migration to Blob Storage and Cosmos DB, with connectors, data-protection helpers and Terraform infrastructure.">
+</picture>
+</a>
+
+<p>
+  <a href="#setup-guide"><strong>Start here ↗</strong></a> &nbsp; / &nbsp;
+  <a href="src/cli.py">Source</a> &nbsp; / &nbsp;
+  <a href="#project-guide">Project guide</a> &nbsp; / &nbsp;
+  <a href="https://github.com/jmragsdale">Profile</a>
+</p>
+
+A Python CLI reference for AI-assisted migration to Blob Storage and Cosmos DB, with connectors, data-protection helpers and Terraform infrastructure.
+
+## Explore the project
+
+Open a card for source, examples or supporting documentation.
+
+<p>
+<a href="#setup-guide">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/setup-dark.png">
+  <img src="docs/assets/readme/setup-light.png" width="360" alt="Review the setup guide. Read prerequisites and setup steps before adapting the example.">
+</picture>
+</a>
+<a href="src/cli.py">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/source-dark.png">
+  <img src="docs/assets/readme/source-light.png" width="360" alt="Inspect the CLI implementation. Review command routing and the data-migration entry points.">
+</picture>
+</a>
+<a href="src/security/pii_scanner.py">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/protection-dark.png">
+  <img src="docs/assets/readme/protection-light.png" width="360" alt="Inspect PII-handling helpers. Read the data-scanning helper and its implementation limits.">
+</picture>
+</a>
+<a href="docs/architecture.md">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/architecture-dark.png">
+  <img src="docs/assets/readme/architecture-light.png" width="360" alt="Follow the architecture. Review the components and the documented processing or access flow.">
+</picture>
+</a>
+</p>
+
+## Project guide
 
 An intelligent, LLM-powered CLI tool for migrating unstructured data, documents, and NoSQL records to Microsoft Azure. Leverages Claude (Anthropic API) for schema analysis, migration planning, and conflict resolution.
 
@@ -12,6 +61,8 @@ An intelligent, LLM-powered CLI tool for migrating unstructured data, documents,
 - **Azure-Native Security**: Managed Identity support, encryption validation, audit logging
 - **Rollback Support**: Complete migration manifest enables safe resource cleanup
 - **Post-Migration Validation**: Integrity checking with record count verification and spot sampling
+
+<a id="setup-guide"></a>
 
 ## Quick Start
 
@@ -253,6 +304,9 @@ Test coverage includes:
 ## Development
 
 ### Project Structure
+<details>
+<summary>Architecture flow (text)</summary>
+
 ```
 az-ai-data-migrator/
 ├── src/
@@ -270,6 +324,8 @@ az-ai-data-migrator/
 ├── setup.py                   # Package configuration
 └── requirements.txt           # Python dependencies
 ```
+
+</details>
 
 ### Adding New Connectors
 
@@ -361,3 +417,10 @@ See [CHANGELOG.md](CHANGELOG.md) for version history and release notes.
 **Version**: 0.1.0
 **Last Updated**: April 6, 2026
 **Maintainer**: Azure Data Migration Team
+
+<details>
+<summary>README visual assets</summary>
+
+[Artwork sources and regeneration notes](docs/assets/readme/README.md).
+
+</details>

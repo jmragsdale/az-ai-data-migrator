@@ -1,0 +1,77 @@
+{
+  "title": "Azure AI Data Migrator",
+  "titleFontSize": 86,
+  "mobileTitle": [
+    "Azure AI",
+    "data migrator"
+  ],
+  "eyebrow": "AI + DATA PROTECTION",
+  "tagline": "Inspect migration plans and data handling.",
+  "mobileTagline": [
+    "Inspect migration plans",
+    "and data handling."
+  ],
+  "description": [
+    "A Python CLI for schema analysis and cloud data migration.",
+    "Connectors, security helpers and infrastructure definitions."
+  ],
+  "mobileDescription": [
+    "A Python CLI for cloud data migration.",
+    "Connectors, security helpers and infrastructure."
+  ],
+  "footerLeft": "PYTHON",
+  "footerMiddle": "AZURE / DATA MIGRATION",
+  "footerRight": "SCHEMA / PLAN / MIGRATE",
+  "diagram": [
+    "SCHEMA",
+    "PLAN",
+    "MIGRATE"
+  ],
+  "summary": "A Python CLI reference for AI-assisted migration to Blob Storage and Cosmos DB, with connectors, data-protection helpers and Terraform infrastructure.",
+  "cards": [
+    {
+      "slug": "setup",
+      "category": "GET STARTED",
+      "title": "Review the setup guide",
+      "lines": [
+        "Read prerequisites and setup steps",
+        "before adapting the example."
+      ],
+      "footer": "SETUP / CONFIGURATION",
+      "href": "#setup-guide"
+    },
+    {
+      "slug": "source",
+      "category": "IMPLEMENTATION",
+      "title": "Inspect the CLI implementation",
+      "lines": [
+        "Review command routing and the",
+        "data-migration entry points."
+      ],
+      "footer": "SOURCE / REFERENCE CODE",
+      "href": "src/cli.py"
+    },
+    {
+      "slug": "protection",
+      "category": "DATA-PROTECTION CODE",
+      "title": "Inspect PII-handling helpers",
+      "lines": [
+        "Read the data-scanning helper",
+        "and its implementation limits."
+      ],
+      "footer": "PYTHON / SECURITY HELPERS",
+      "href": "src/security/pii_scanner.py"
+    },
+    {
+      "slug": "architecture",
+      "category": "ARCHITECTURE",
+      "title": "Follow the architecture",
+      "lines": [
+        "Review the components and the",
+        "documented processing or access flow."
+      ],
+      "footer": "DESIGN / REFERENCE FLOW",
+      "href": "docs/architecture.md"
+    }
+  ]
+}
