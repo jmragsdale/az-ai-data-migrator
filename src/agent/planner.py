@@ -84,7 +84,7 @@ class MigrationPlanner:
 
         try:
             message = self.client.messages.create(
-                model="claude-3-5-sonnet-20241022",
+                model="claude-haiku-5-5",
                 max_tokens=2500,
                 system=system_prompt,
                 messages=[{"role": "user", "content": user_message}],
@@ -206,6 +206,6 @@ class MigrationPlanner:
             "batch_size": batch_size,
             "seconds_per_batch": estimated_seconds_per_batch,
             "total_seconds": int(total_seconds),
-            "estimated_hours": round(hours, 1),
+            "estimated_hours": round(hours, 2),
             "estimated_minutes": round(minutes, 0),
         }

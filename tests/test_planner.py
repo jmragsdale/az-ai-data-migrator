@@ -379,5 +379,6 @@ class TestMigrationTimeEstimation:
         estimate = planner.estimate_migration_time(1000000, throughput_limit=500)
 
         assert estimate["total_batches"] == 200
-        assert estimate["total_seconds"] > 0
-        assert estimate["estimated_hours"] >= 1
+        # 1,000,000 docs at 500 docs/s = 2,000 s (~33 min)
+        assert estimate["total_seconds"] == 2000
+        assert estimate["estimated_hours"] == 0.56
