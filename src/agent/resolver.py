@@ -66,7 +66,7 @@ class ConflictResolver:
 
         try:
             message = self.client.messages.create(
-                model="claude-3-5-sonnet-20241022",
+                model="claude-haiku-5-5",
                 max_tokens=2000,
                 system=system_prompt,
                 messages=[{"role": "user", "content": user_message}],

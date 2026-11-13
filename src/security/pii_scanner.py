@@ -168,7 +168,7 @@ class PIIScanner:
 
         try:
             message = self.client.messages.create(
-                model="claude-3-5-sonnet-20241022",
+                model="claude-haiku-5-5",
                 max_tokens=1000,
                 system=system_prompt,
                 messages=[{"role": "user", "content": user_message}],
@@ -179,7 +179,7 @@ class PIIScanner:
             # Parse response
             return {
                 "claude_analysis": analysis_text,
-                "model": "claude-3-5-sonnet-20241022",
+                "model": "claude-haiku-5-5",
                 "tokens_used": message.usage.input_tokens
                 + message.usage.output_tokens,
             }
