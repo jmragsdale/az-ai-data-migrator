@@ -4,7 +4,7 @@ import os
 from typing import Any, Dict, List, Optional
 
 from azure.storage.blob import BlobSasPermissions, BlobServiceClient, generate_blob_sas
-from azure.storage.blob.exceptions import ResourceExistsError
+from azure.core.exceptions import ResourceExistsError
 from src.utils.logger import get_logger
 from src.utils.manifest import MigrationManifest
 from src.utils.tagger import ResourceTagger

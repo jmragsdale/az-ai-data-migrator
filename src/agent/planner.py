@@ -206,6 +206,6 @@ class MigrationPlanner:
             "batch_size": batch_size,
             "seconds_per_batch": estimated_seconds_per_batch,
             "total_seconds": int(total_seconds),
-            "estimated_hours": round(hours, 1),
+            "estimated_hours": round(hours, 2),
             "estimated_minutes": round(minutes, 0),
         }

@@ -15,7 +15,8 @@ class PIIScanner:
     # Regex patterns for common PII
     PII_PATTERNS = {
         "ssn": r"\b\d{3}-\d{2}-\d{4}\b",
-        "email": r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b",
+        # \w (Unicode-aware) so internationalized addresses like josé@example.com match
+        "email": r"\b[\w.%+-]+@[\w.-]+\.[A-Za-z]{2,}\b",
         "phone": r"\b(?:\+?1[-.\s]?)?\(?[0-9]{3}\)?[-.\s]?[0-9]{3}[-.\s]?[0-9]{4}\b",
         "credit_card": r"\b(?:\d{4}[-\s]?){3}\d{4}\b",
         "ipv4": r"\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b",
@@ -61,6 +62,8 @@ class PIIScanner:
         str_value = str(field_value)
         if not str_value:
             return result
+
+        self.pii_report["fields_scanned"] += 1
 
         for pii_type, pattern in self.PII_PATTERNS.items():
             if re.search(pattern, str_value):
@@ -115,6 +118,9 @@ class PIIScanner:
                             findings.append(result)
 
         scan_recursive(document)
+
+        # Accumulate into the scanner-wide report so generate_report() sees it
+        self.pii_report["findings"].extend(findings)
 
         return {
             "document_scan": True,

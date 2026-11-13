@@ -473,9 +473,13 @@ class TestManifestTracking:
             mock_client_class.from_connection_string.return_value = mock_cosmos_client
 
             migrator = CosmosDBMigrator("test-connection-string", manifest=mock_manifest)
-            migrator.create_database("test_db", tags={"env": "test"})
+            # mock_manifest is a real MigrationManifest, so spy on it
+            with patch.object(
+                mock_manifest, "log_resource", wraps=mock_manifest.log_resource
+            ) as log_spy:
+                migrator.create_database("test_db", tags={"env": "test"})
 
-            mock_manifest.log_resource.assert_called()
+            log_spy.assert_called()
 
     def test_blob_logs_resources_to_manifest(self, mock_blob_client, mock_manifest):
         """Test that Blob Storage operations log to manifest."""
@@ -483,6 +487,10 @@ class TestManifestTracking:
             mock_client_class.from_connection_string.return_value = mock_blob_client
 
             migrator = BlobStorageMigrator("test-connection-string", manifest=mock_manifest)
-            migrator.create_container("documents", tags={"env": "test"})
+            # mock_manifest is a real MigrationManifest, so spy on it
+            with patch.object(
+                mock_manifest, "log_resource", wraps=mock_manifest.log_resource
+            ) as log_spy:
+                migrator.create_container("documents", tags={"env": "test"})
 
-            mock_manifest.log_resource.assert_called()
+            log_spy.assert_called()
